@@ -125,4 +125,4 @@ All services and hardening measures were configured manually to demonstrate a de
 
 ## License
 
-*(Optional: add MIT or other license for open-source configs.)*
+This project is licensed under the [MIT License](LICENSE).
