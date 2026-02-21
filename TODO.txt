@@ -1,0 +1,26 @@
+Access and Auth:
+- Change SSH port.
+- Two factor auth for SSH.
+
+firewall and network
+- disable unused services
+
+nginx/web server security
+- enforce tls 1.2+
+- enable http security headers
+- limit access to admin paths with vpn and ip allow lists
+- hide version numbers in headers
+
+user and system hardening
+- regular user audits
+- disk encryption for linode volumes
+- file permissions fpr web root and sensitive files
+
+backups and redundancy
+- add backup integrity check scripts
+- document retention policy
+
+extras
+- itrusion detection with auditd or OSSEC
+- apply CIS ubuntu benchmark guidelines
+- automate repetitive checks (check system hardening)
