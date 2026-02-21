@@ -60,7 +60,7 @@ flowchart TD
     CloudWatcher --> Backups
     Route53 --> Email
 
----
+```
 
 ## Security & Hardening
 
