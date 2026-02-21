@@ -89,9 +89,14 @@ flowchart TD
 - Regular Linode snapshots and object storage backups ensure data redundancy  
 
 ### VPN
+
+> Note: Sensitive keys and IPs are intentionally excluded. Replace placeholders in `wg0.conf.example` before deployment.
+
 - WireGuard VPN configured as the only remote access method to the server  
 - VPN enforces strong encryption and restricted allowed IPs  
-
+- WireGuard VPN deployed via Docker Compose for secure remote access
+- Containerized setup ensures reproducibility and simplified management
+- Configuration stored separately in `docker/wireguard/` with example configs for security
 ---
 
 ## Setup Summary (Reproducible Steps)
