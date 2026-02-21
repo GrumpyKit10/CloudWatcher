@@ -27,8 +27,6 @@ CloudWatcher is a manually configured Ubuntu 22.04 server hosted on Linode. It s
 
 ## Architecture Diagram
 
-## Architecture Diagram
-
 The following diagram shows the CloudWatcher server setup:
 
 - Secure remote access via WireGuard VPN and SSH keys
@@ -41,15 +39,15 @@ The following diagram shows the CloudWatcher server setup:
 flowchart TD
     Internet((Internet))
     Route53[AWS Route53 DNS]
-    ACM[AWS Certificate Manager (HTTPS)]
-    CloudWatcher[CloudWatcher Server (Ubuntu 24.04.4)]
+    ACM[AWS Certificate Manager HTTPS]
+    CloudWatcher[CloudWatcher Server Ubuntu 22.04]
     Nginx[Nginx Web Server]
     VPN[WireGuard VPN]
-    Users[Authorized Users (SSH Keys)]
+    Users[Authorized Users SSH Keys]
     UFW[UFW Firewall + Fail2Ban]
-    Logs[Persistent Logging (journald, Nginx, UFW)]
-    Backups[Backups (Linode Snapshots & Object Storage)]
-    Email[Zoho Mail (catch-all @infosecmatthew.com)]
+    Logs[Persistent Logging journald Nginx UFW]
+    Backups[Linode Snapshots & Object Storage]
+    Email[Zoho Mail catch-all]
 
     Internet --> Route53
     Route53 --> ACM
