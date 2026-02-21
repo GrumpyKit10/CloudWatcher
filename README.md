@@ -20,7 +20,9 @@ CloudWatcher is a manually configured Ubuntu 22.04 server hosted on Linode. It s
   - Object storage backup (Linode bucket)
 - Persistent logging and monitoring for system, service, and network events  
 - Infrastructure maintained entirely through manual configuration for full control
-
+- Domain and DNS managed via AWS Route53
+- HTTPS configured with AWS Certificate Manager
+- Custom domain email setup using Zoho Mail with catch-all support
 ---
 
 ## Architecture Diagram
@@ -74,6 +76,8 @@ CloudWatcher is a manually configured Ubuntu 22.04 server hosted on Linode. It s
 7. Enable persistent journald logging and verify system logs  
 8. Configure Linode snapshot backups and object storage backups  
 9. Enable automatic security updates  
+10. Configured Route53 DNS and AWS Certificate Manager for secure HTTPS traffic
+11. Integrated custom email via Zoho Mail with catch-all functionality for personal domain
 
 ---
 
@@ -85,4 +89,4 @@ All services and hardening measures were configured manually to demonstrate a de
 
 ## License
 
-*(Optional: add MIT or other license if you want to open-source configs.)*
+*(Optional: add MIT or other license for open-source configs.)*
